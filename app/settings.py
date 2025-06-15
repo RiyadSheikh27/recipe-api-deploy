@@ -87,11 +87,11 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'recipe_api',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': 'recipe_api',           # Your database name
+        'USER': 'postgres',              # Your database username
+        'PASSWORD': '1234',              # Your database password
+        'HOST': 'your-database-host.com', # Your database server's public IP/hostname
+        'PORT': '5432',                  # Your database port
     }
 }
 # Password validation
