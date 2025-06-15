@@ -84,14 +84,20 @@ WSGI_APPLICATION = "app.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "recipe_api",  # Your database name
+#         "USER": "postgres",  # Your database username
+#         "PASSWORD": "1234",  # Your database password
+#         "HOST": "localhost",  # Your database server's public IP/hostname
+#         "PORT": "5432",  # Your database port
+#     }
+# }
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "recipe_api",  # Your database name
-        "USER": "postgres",  # Your database username
-        "PASSWORD": "1234",  # Your database password
-        "HOST": "test-deploy-53ji.onrender.com",  # Your database server's public IP/hostname
-        "PORT": "5432",  # Your database port
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 # Password validation
